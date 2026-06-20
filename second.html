@@ -56,8 +56,8 @@ border:1px solid rgba(255,215,0,.35);
 border-radius:35px;
 display:flex;
 align-items:center;
-justify-content:center;
-gap:25px;
+justify-content:center;   /* FIXED */
+gap:25px;                 /* ADDED */
 padding:35px;
 box-shadow:0 0 40px rgba(255,215,0,.15);
 }
@@ -178,21 +178,43 @@ border-radius:15px;
 border:1px solid rgba(255,215,0,.25);
 text-align:center;
 color:white;
-cursor:pointer;
 }
 
 @media(max-width:900px){
+
 .card{
 flex-direction:column;
 height:96vh;
 padding:15px;
 }
-.left,.right{width:100%;}
-.logo{font-size:40px;}
-.photo{width:260px;height:160px;}
-.name{font-size:22px;}
-.heading{font-size:26px;text-align:center;}
-.btn{height:58px;font-size:14px;}
+
+.left,
+.right{
+width:100%;
+}
+
+.logo{
+font-size:40px;
+}
+
+.photo{
+width:260px;
+height:160px;
+}
+
+.name{
+font-size:22px;
+}
+
+.heading{
+font-size:26px;
+text-align:center;
+}
+
+.btn{
+height:58px;
+font-size:14px;
+}
 }
 </style>
 </head>
@@ -202,6 +224,7 @@ padding:15px;
 <div class="card">
 
 <div class="left">
+
 <div class="logo">Nitish</div>
 <div class="tag">WEDDING VIDEO</div>
 
@@ -210,6 +233,7 @@ padding:15px;
 </div>
 
 <div class="name">Lalan ❤️ Nishu</div>
+
 </div>
 
 <div class="right">
@@ -217,28 +241,23 @@ padding:15px;
 <div class="heading">Wedding Videos</div>
 
 <div class="grid">
+
 <a href="https://youtu.be/TM04Bco7Dqs" class="btn" target="_blank"><span class="shine"></span>VIDEO 01</a>
 <a href="https://youtu.be/0dnBunAFgKs" class="btn" target="_blank"><span class="shine"></span>VIDEO 02</a>
 <a href="https://youtu.be/YqPiqMKn0n8" class="btn" target="_blank"><span class="shine"></span>VIDEO 03</a>
 <a href="https://youtu.be/IJRJX40b3KM" class="btn" target="_blank"><span class="shine"></span>VIDEO 04</a>
 <a href="https://youtu.be/awgiIaU7ArY" class="btn" target="_blank"><span class="shine"></span>VIDEO 05</a>
 <a href="https://youtu.be/9EwXDy5feL8" class="btn" target="_blank"><span class="shine"></span>MAIN VIDEO</a>
+
 </div>
 
-<!-- 👇 DOUBLE CLICK HERE -->
-<div class="footer" ondblclick="openPage()">
+<div class="footer">
 ✨ Thanks For Watching ✨
 </div>
 
 </div>
 
 </div>
-
-<script>
-function openPage(){
-window.location.href = "password.html"; // 👉 अपना html file name डालो
-}
-</script>
 
 </body>
 </html>
