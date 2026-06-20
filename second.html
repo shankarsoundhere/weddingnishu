@@ -5,19 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nitish - Wedding Video</title>
 
-<script>
-// 🔒 PASSWORD PROTECTION (PAGE LOAD SE PEHLE)
-var correctPassword = "1234"; // 👉 अपना password यहाँ बदलो
-
-var userPass = prompt("Enter Password 🔒");
-
-if(userPass !== correctPassword){
-alert("Wrong Password ❌");
-document.write("Access Denied");
-throw new Error("Access Denied");
-}
-</script>
-
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
@@ -191,10 +178,15 @@ border-radius:15px;
 border:1px solid rgba(255,215,0,.25);
 text-align:center;
 color:white;
+cursor:pointer;
 }
 
 @media(max-width:900px){
-.card{flex-direction:column;height:96vh;padding:15px;}
+.card{
+flex-direction:column;
+height:96vh;
+padding:15px;
+}
 .left,.right{width:100%;}
 .logo{font-size:40px;}
 .photo{width:260px;height:160px;}
@@ -233,13 +225,20 @@ color:white;
 <a href="https://youtu.be/9EwXDy5feL8" class="btn" target="_blank"><span class="shine"></span>MAIN VIDEO</a>
 </div>
 
-<div class="footer">
+<!-- 👇 DOUBLE CLICK HERE -->
+<div class="footer" ondblclick="openPage()">
 ✨ Thanks For Watching ✨
 </div>
 
 </div>
 
 </div>
+
+<script>
+function openPage(){
+window.location.href = "second.html"; // 👉 अपना html file name डालो
+}
+</script>
 
 </body>
 </html>
