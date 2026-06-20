@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nitish - Wedding Video</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+font-family:'Poppins',sans-serif;
+background:
+linear-gradient(rgba(40,0,15,.70),rgba(40,0,15,.70)),
+url('https://images.unsplash.com/photo-1519741497674-611481863552?w=2000');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+pointer-events:none;
+background:
+radial-gradient(circle at 20% 30%, rgba(255,215,0,.25) 2px, transparent 3px),
+radial-gradient(circle at 70% 20%, rgba(255,215,0,.20) 2px, transparent 3px),
+radial-gradient(circle at 40% 80%, rgba(255,215,0,.20) 2px, transparent 3px),
+radial-gradient(circle at 90% 70%, rgba(255,215,0,.20) 2px, transparent 3px);
+animation:sparkle 8s linear infinite;
+}
+
+@keyframes sparkle{
+50%{opacity:.5;}
+100%{opacity:1;}
+}
+
+.card{
+width:95%;
+max-width:1250px;
+height:92vh;
+background:rgba(90,0,20,.35);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,215,0,.35);
+border-radius:35px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:25px;
+padding:35px;
+box-shadow:0 0 40px rgba(255,215,0,.15);
+}
+
+.left{
+width:45%;
+text-align:center;
+}
+
+.logo{
+font-family:'Cinzel',serif;
+font-size:60px;
+font-weight:700;
+color:#FFD700;
+}
+
+.tag{
+margin-top:5px;
+letter-spacing:4px;
+font-size:13px;
+color:#f2d88a;
+}
+
+.photo{
+width:420px;
+height:260px;
+margin:25px auto;
+padding:8px;
+border-radius:20px;
+background:linear-gradient(135deg,#FFD700,#FFF3B0,#FFD700);
+box-shadow:0 0 30px rgba(255,215,0,.3);
+}
+
+.photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:15px;
+display:block;
+}
+
+.name{
+font-size:30px;
+font-weight:600;
+color:white;
+}
+
+.right{
+width:45%;
+}
+
+.heading{
+font-family:'Cinzel',serif;
+font-size:40px;
+color:#FFD700;
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.btn{
+position:relative;
+overflow:hidden;
+text-decoration:none;
+height:80px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:18px;
+background:linear-gradient(
+135deg,
+rgba(128,0,32,.95),
+rgba(90,0,20,.95)
+);
+border:1px solid rgba(255,215,0,.45);
+color:white;
+font-size:18px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 0 25px rgba(255,215,0,.30);
+}
+
+.shine{
+position:absolute;
+top:0;
+left:-130%;
+width:60%;
+height:100%;
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(255,215,0,.9),
+transparent
+);
+animation:run 2s linear infinite;
+}
+
+@keyframes run{
+100%{
+left:180%;
+}
+}
+
+.footer{
+margin-top:20px;
+padding:16px;
+background:rgba(128,0,32,.35);
+border-radius:15px;
+border:1px solid rgba(255,215,0,.25);
+text-align:center;
+color:white;
+cursor:pointer;
+}
+
+@media(max-width:900px){
+.card{
+flex-direction:column;
+height:96vh;
+padding:15px;
+}
+.left,.right{width:100%;}
+.logo{font-size:40px;}
+.photo{width:260px;height:160px;}
+.name{font-size:22px;}
+.heading{font-size:26px;text-align:center;}
+.btn{height:58px;font-size:14px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="left">
+<div class="logo">Nitish</div>
+<div class="tag">WEDDING VIDEO</div>
+
+<div class="photo">
+<img src="photo.jpg" alt="Wedding Photo">
+</div>
+
+<div class="name">Lalan ❤️ Nishu</div>
+</div>
+
+<div class="right">
+
+<div class="heading">Wedding Videos</div>
+
+<div class="grid">
+<a href="https://youtu.be/TM04Bco7Dqs" class="btn" target="_blank"><span class="shine"></span>VIDEO 01</a>
+<a href="https://youtu.be/0dnBunAFgKs" class="btn" target="_blank"><span class="shine"></span>VIDEO 02</a>
+<a href="https://youtu.be/YqPiqMKn0n8" class="btn" target="_blank"><span class="shine"></span>VIDEO 03</a>
+<a href="https://youtu.be/IJRJX40b3KM" class="btn" target="_blank"><span class="shine"></span>VIDEO 04</a>
+<a href="https://youtu.be/awgiIaU7ArY" class="btn" target="_blank"><span class="shine"></span>VIDEO 05</a>
+<a href="https://youtu.be/9EwXDy5feL8" class="btn" target="_blank"><span class="shine"></span>MAIN VIDEO</a>
+</div>
+
+<!-- 👇 DOUBLE CLICK HERE -->
+<div class="footer" ondblclick="openPage()">
+✨ Thanks For Watching ✨
+</div>
+
+</div>
+
+</div>
+
+<script>
+function openPage(){
+window.location.href = "second.html"; // 👉 अपना html file name डालो
+}
+</script>
+
+</body>
+</html>
